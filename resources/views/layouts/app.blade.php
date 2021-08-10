@@ -56,7 +56,6 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class='dropdown-item' href="{{ route('posts.index') }}">タイムライン</a>
                                     <a class='dropdown-item' href="{{ route('posts.create') }}">投稿する</a>
                                     <a class="dropdown-item" href="{{ route('bookmarks.index') }}">ブックマーク</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
