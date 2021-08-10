@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function(){
 
 Route::prefix('posts')->as('posts.')->group(function() {
 
-    //auth1が適応される（ログインユーザーのみ許可）
+    //authが適応される（ログインユーザーのみ許可）
     Route::middleware('auth')->group(function() {
         Route::get('create', 'PostController@create')->name('create');
         Route::post('store', 'PostController@store')->name('store');
